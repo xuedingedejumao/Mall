@@ -1,0 +1,19 @@
+server:
+  port: 8800
+spring:
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+feign:
+  okhttp:
+    enabled: true
+  client:
+    config:
+      default:
+        connectTimeout: 50000
+        readTimeout: 50000
+        loggerLevel: basic
+
+jwt:
+  secret: 798265994
