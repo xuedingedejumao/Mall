@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.aurora.malladmin.dao.mapper.UserDao">
+    <resultMap id="BaseResultMap" type="com.aurora.malladmin.dto.User">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="open_id" jdbcType="VARCHAR" property="openId"/>
+        <result column="session_key" jdbcType="VARCHAR" property="sessionKey"/>
+        <result column="login_status" jdbcType="VARCHAR" property="loginStatus"/>
+        <result column="creation_time" jdbcType="VARCHAR" property="creationTime"/>
+    </resultMap>
+
+    <select id="selectUserByOpenId" resultType="com.aurora.malladmin.dto.User">
+        SELECT *
+        FROM user
+        WHERE
+        open_id = #{openId}
+    </select>
+</mapper>

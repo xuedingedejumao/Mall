@@ -19,14 +19,10 @@
 
     <modules>
         <module>mall-admin</module>
-        <module>mall-auth</module>
         <module>mall-common</module>
-        <module>mall-demo</module>
         <module>mall-gateway</module>
-        <module>mall-monitor</module>
         <module>mall-portal</module>
-        <module>mall-search</module>
-        <module>mall-mbg</module>
+        <module>mall-monitor</module>
     </modules>
 
     <!--指定占位符默认值-->
@@ -120,12 +116,7 @@
                 <artifactId>mall-common</artifactId>
                 <version>0.0.1-SNAPSHOT</version>
             </dependency>
-            <!-- MBG生成模块 -->
-            <dependency>
-                <groupId>com.Aurora</groupId>
-                <artifactId>mall-common</artifactId>
-                <version>0.0.1-SNAPSHOT</version>
-            </dependency>
+
            <!--  MyBatis分页插件starter -->
             <dependency>
                 <groupId>com.github.pagehelper</groupId>

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: mall-gateway
+  cloud:
+    nacos:
+      username: nacos
+      password: nacos
+      server-addr: localhost:8848
+      config:
+        enabled: true
+        refresh-enabled: true
+    discovery:
+      enabled: true
